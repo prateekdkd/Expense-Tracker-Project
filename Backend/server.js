@@ -3,10 +3,18 @@ const dotenv = require("dotenv")
 const connectDB = require("./config/db")
 const authroute = require("./routes/auth.route")
 const expenseroute = require("./routes/expense.route");
+const cors = require("cors")
 dotenv.config();
 const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 5000
+
+app.use(cors({
+    origin:[
+        "http://localhost:5173/"
+    ],
+    credentials:true
+}))
 
 app.use("/api/auth", authroute)
 app.use("/api/expense",expenseroute)
