@@ -10,13 +10,12 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-    origin:[
-        "https://expensetrackerp.netlify.app/"
-    ],
-      methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials:true
-}))
-
+  origin: "https://expensetrackerp.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+app.options("*", cors());
+app.use(express.json());
 app.use("/api/auth", authroute)
 app.use("/api/expense",expenseroute)
 
