@@ -1,0 +1,120 @@
+.transaction-list {
+  background: white;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+   width: 80px; 
+  overflow: hidden;
+}
+
+.item-title {
+  margin: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.item-category {
+  font-size: 12px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+   margin-left: 10px;
+}
+.item-badge{
+  font-size: 9px;
+  background-color: rgba(222, 213, 222, 0.507);
+  padding: 3px;
+}
+.item-amount{
+  font-size: 20px;
+  font-weight: bold;
+}
+.amt-income {
+  color: #17ca20; /* Green */
+  font-weight: bold;
+}
+
+.amt-expense {
+  color: #d32f2f; /* Red */
+  font-weight: bold;
+}
+
+.action-btns {
+  display: flex;
+  gap: 5px;
+}
+
+
+.btn-sm2{
+   padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  background-color: #ffebee;
+  transition: 0.2s;
+} 
+.btn-sm2:hover {
+  background-color: #ffcdd2; /* Slightly darker on hover */
+}
+/*  For Home  */
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px auto;
+  width: 300px;
+  margin-top: 70px;
+   /* Ya aapke form ke barabar width */
+}
+
+.summary-card {
+  flex: 1; /* Dono cards ko equal width dega */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.income-card {
+  background-color: #e8f5e9; /* Light green */
+  color: #2e7d32;
+}
+
+.expense-card {
+  background-color: #ffebee; /* Light red */
+  color: #c62828;
+}
+
+.summary-card h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.summary-card p {
+  margin: 5px 0 0 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}

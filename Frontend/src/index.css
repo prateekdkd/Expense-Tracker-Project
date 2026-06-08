@@ -1,0 +1,397 @@
+/* Reset default margins and set a clean system font */
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+body {
+    background-color: #f8fafc; /* Soft light gray background */
+    min-height: 100vh;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 400px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #111827;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #111827;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+/* Modern focus state for input fields */
+.input-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5; /* Indigo primary color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #4338ca;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.register-link a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* For regisetr form */
+
+
+Reset and Base Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Layout Containers */
+.auth-container {
+    width: 400px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.auth-box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h2 {
+    color: #111827;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* Form Elements */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+     display: block; 
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+ .input-group input {
+    width: 100%;
+     padding: 12px 14px; 
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #111827;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+/* Checkboxes and Links */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    cursor: pointer;
+}
+
+.text-link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.auth-btn:hover {
+    background-color: #4338ca;
+}
+
+/* Footer Links */
+.redirect-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.redirect-link a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.redirect-link a:hover {
+    text-decoration: underline;
+}
+
+/* For Home Page */
+
+.home-box{
+    text-align: center;
+    height: 200px;
+    width: 450px;
+    max-width: 370px;
+    background-color: rgba(225, 225, 236, 0.589);
+    box-shadow: 4px 4px 4px 0px rgb(183, 179, 179);
+    border-radius: 20px;
+  
+}
+.username{
+    margin-top: 50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 30px;
+       padding: 30px;
+}
+
+/* for nav Bar */
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(10, 25, 47, 0.8)
+}
+.navbar button{
+    background-color: #10b981;
+    margin: 15px;
+    height: 28px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-weight: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.948);
+    border: none;
+}
+.btndiv{
+    width: 80px;
+    margin-right: 10px;
+}
+.usernamenav{
+    width: 225px;
+    overflow: hidden;
+}
+.usernamenav h2{
+    color: rgb(18, 19, 21);
+    padding: 9px;
+    margin-top: 10px;
+    font-size: 19PX;
+    position: absolute;
+    color: #f3f4f6;
+    
+}
+
+
+/* For Expense Form  */
+
+.expense-form {
+  width: 290px;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expense-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.expense-form input,
+.expense-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  border-color:  #10b981;;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+}
+
+.expense-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #10b981;;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expense-form button:hover {
+  transform: translateY(-2px);
+}
+
+.expense-form button:active {
+  transform: translateY(0);
+}
