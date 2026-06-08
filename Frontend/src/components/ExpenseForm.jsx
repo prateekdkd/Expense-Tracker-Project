@@ -54,7 +54,7 @@ export default function ExpenseForm({fetchExpenses}) {
   return (
 
     <>
-     <form className="expense-form" onSubmit={handleSubmit}>
+     <form className="expense-form" onSubmit={handleSubmit} autoComplete="off">
 
         <h2>Add Transaction</h2>
 

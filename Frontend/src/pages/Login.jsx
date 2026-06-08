@@ -44,7 +44,7 @@ function Login({setUser}){
             <h2>Welcome Back</h2>
             <p className="subtitle">Please enter your details to sign in.</p>
 
-            <form onSubmit={handleSumit}>
+            <form onSubmit={handleSumit} autoComplete='off'>
                 <div className="input-group">
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required value={formData.email} onChange={handleChange}/>

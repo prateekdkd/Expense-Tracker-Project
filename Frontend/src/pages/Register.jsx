@@ -38,7 +38,7 @@ export default function Register({setUser}) {
             <h2>Create an Account</h2>
             <p className="subtitle">Join us today! Please fill  your details.</p>
 
-            <form onSubmit={handleSumit}>
+            <form onSubmit={handleSumit} autoComplete="off">
                 <div className="input-group">
                     <label>Full Name</label>
                     <input type="text" id="username" name="username" placeholder="Enter your name" required value={formData.username} onChange={handleChange}/>
